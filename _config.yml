@@ -1,6 +1,6 @@
 # Site settings
 baseurl: "makiblog"
-url: "makiblog"
+url: "https://makinars.github.io/"
 email: ""
 
 title: Makinars
