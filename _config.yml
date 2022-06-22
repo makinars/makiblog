@@ -1,0 +1,40 @@
+# Site settings
+baseurl: ""
+url: ""
+email: ""
+
+title: Makinars
+description: Estudo e produção de arte digital, vfx e desenvolvimento de games com software livre.
+
+#github_username: Github
+#twitter_username: Twitter
+youtube_username: Makinars
+instagram_username: makinars
+
+gems: [jekyll-paginate]
+paginate: 5
+
+# Google services
+google_analytics: UA-131728264-1
+
+# Build settings
+markdown: kramdown
+permalink: /:title
+
+# Default Settings
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      author: Makinars
+      layout: "post"
+      category: blog
+      comments: true
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "page"

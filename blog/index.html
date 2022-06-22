@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- HorizontalBar -->
+        <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-6962200783353455"
+        data-ad-slot="3878896458"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    <br>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+
+    <li>
+      {% if post.image %}
+      <img class="query-img" src="/images/blog/thumb/{{ post.image }}">
+      {% endif %}
+
+
+
+      <h2 style="margin: 0;">
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+      {{ post.excerpt }}
+
+      <a class-"btn-default" href="{{ post.url | prepend: site.baseurl }}">Read more</a>
+    </li>
+
+    <div class="clearfix"></div>
+
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- HorizontalBar -->
+        <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-6962200783353455"
+        data-ad-slot="3878896458"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+</div>
